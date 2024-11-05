@@ -2,7 +2,7 @@
 #include <iostream>
 
 template <typename T>
-T sortare(T *v, int n)
+void sortare(T *v, int n)
 {
     T aux;
     bool swap;
@@ -26,5 +26,4 @@ T sortare(T *v, int n)
         }
     }
 
-    return v[0];
 }

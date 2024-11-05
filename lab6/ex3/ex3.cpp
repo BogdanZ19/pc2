@@ -13,4 +13,6 @@ int main()
         std::cout << v[i] << " ";
     }
     std::cout << std::endl;
+
+    return 0;
 }
