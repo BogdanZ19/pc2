@@ -11,7 +11,7 @@ int main()
     std::cin >> a1;
     std::cout << a1;
 
-    std::cout << a1.k;
+    std::cout << a1.k << std::endl;
 
     return 0;
 }

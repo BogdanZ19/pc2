@@ -12,7 +12,7 @@ Automobil::~Automobil()
 
 std::ostream &operator<<(std::ostream &stream, const Automobil &a)
 {
-    stream << "Capacitatea = " << a.capacitate << "Consum = " << a.consum << std::endl;
+    stream << "Capacitatea = " << a.capacitate << std::endl <<"Consum = " << a.consum << std::endl;
     
     return stream;
 }
