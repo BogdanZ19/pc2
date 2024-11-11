@@ -1,17 +1,19 @@
 #include <iostream>
-#include "automobil.h"
+#include "autoturism.h"
 
-int Automobil::k = 0;
+int Autoturism::k = 0;
 
 int main()
 {
-    Automobil a1;
-   
+    Roata r1[4] = {Roata(9u), Roata(17u), Roata(23u), Roata(45u)};
+    Autoturism a1(5, 8.4, r1), a2;
+    
 
-    std::cin >> a1;
-    std::cout << a1;
+    std::cin >> a2;
+    std::cout << std::endl << "a1:" << std::endl << a1 << std::endl;
+    std::cout << "a2:" << std::endl << a2 << std::endl;
 
-    std::cout << a1.k << std::endl;
+    std::cout << Autoturism::k << std::endl;
 
     return 0;
 }
