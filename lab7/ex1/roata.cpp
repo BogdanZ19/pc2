@@ -19,3 +19,13 @@ Roata::Roata(unsigned int newDimensiune)
 {
     dimensiune = newDimensiune;
 }
+
+// Roata::Roata(const Roata& r)
+// {
+//     this->dimensiune=r.dimensiune;
+// }
+
+// Roata::Roata(const Roata &&r)
+// {
+//     this->dimensiune = r.dimensiune;
+// }

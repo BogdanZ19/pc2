@@ -1,9 +1,12 @@
 #include "autoturism.h"
 
 
-Autoturism::Autoturism(unsigned int newCapacitate, double newConsum, const Roata newRoata[4]): capacitate(newCapacitate), consum(newConsum)
+Autoturism::Autoturism(unsigned int newCapacitate, double newConsum, const Roata newRoata[]): capacitate(newCapacitate), consum(newConsum)
 {
-    std::copy(newRoata, newRoata+4, roata);
+    if(newRoata != nullptr)
+    {
+        std::copy(newRoata, newRoata+4, this->roata);
+    }
     k++;
 }
 
