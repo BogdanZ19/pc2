@@ -19,10 +19,10 @@ std::ostream &operator<<(std::ostream &stream, const Autoturism &a)
 {
     stream << "Capacitatea = " << a.capacitate << std::endl <<"Consum = " << a.consum << std::endl << std::endl;
     
-    std::cout << "Dimensiunile rotilor:" << std::endl;
+    stream << "Dimensiunile rotilor:" << std::endl;
     for(int i = 0; i < 4; i++)
     {
-        std::cout << "Roata[" << i << "] = " << a.roata[i] << std::endl;
+        stream << "Roata[" << i << "] = " << a.roata[i] << std::endl;
     }
 
     return stream;

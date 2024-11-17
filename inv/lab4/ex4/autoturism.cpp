@@ -2,11 +2,11 @@
 #include <iostream>
 #include <cstring>
 
-Autoturism::Autoturism(): culoare(nullptr), an_fabricatie(0) {}
+Autoturism::Autoturism() : culoare(nullptr), an_fabricatie(0) {}
 
 Autoturism::Autoturism(const char *newCuloare, unsigned newAn) : an_fabricatie(newAn)
 {
-    if(newCuloare != nullptr)
+    if (newCuloare != nullptr)
     {
         culoare = new char[strlen(newCuloare) + 1];
         strcpy(culoare, newCuloare);
@@ -15,17 +15,16 @@ Autoturism::Autoturism(const char *newCuloare, unsigned newAn) : an_fabricatie(n
     {
         culoare = nullptr;
     }
-
 }
 
-Autoturism::Autoturism(const Autoturism &a): an_fabricatie(a.an_fabricatie)
+Autoturism::Autoturism(const Autoturism &a) : an_fabricatie(a.an_fabricatie)
 {
-    if(a.culoare != nullptr)
+    if (a.culoare != nullptr)
     {
         culoare = new char[strlen(a.culoare) + 1];
         std::strcpy(culoare, a.culoare);
     }
-    else 
+    else
     {
         culoare = nullptr;
     }
@@ -54,15 +53,15 @@ Autoturism::~Autoturism()
 void Autoturism::changeColor()
 {
     char buffer[20];
-    
+
     std::cout << "Noua culoare = ";
-    std::cin >> buffer; 
+    std::cin >> buffer;
     strcpy(culoare, buffer);
 }
 
 bool Autoturism::comparaAn(const Autoturism a)
 {
-    if(an_fabricatie > a.an_fabricatie)
+    if (an_fabricatie > a.an_fabricatie)
     {
         return true;
     }
@@ -76,16 +75,16 @@ std::ostream &operator<<(std::ostream &stream, const Autoturism a)
     return stream;
 }
 
-std::istream &operator>>(std::istream &stream, Autoturism& a)
+std::istream &operator>>(std::istream &stream, Autoturism &a)
 {
     char buffer[20];
-    
+
     std::cout << "Culoare = ";
     stream >> buffer;
 
-    if(a.culoare == nullptr)
+    if (a.culoare == nullptr)
     {
-        a.culoare = new char[strlen(buffer)+1];
+        a.culoare = new char[strlen(buffer) + 1];
     }
     strcpy(a.culoare, buffer);
 

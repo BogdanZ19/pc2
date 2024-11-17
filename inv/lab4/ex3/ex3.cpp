@@ -19,10 +19,5 @@ int main()
 
     std::cout << (a1.comparaAn(a2)? "a1 > a2" : "a2 > a1") << std::endl;
 
-    // if(culoare == nullptr)
-    // {
-    //     culoare = new char[strlen(buffer)+1];
-    // }
-
     return 0;
 }
