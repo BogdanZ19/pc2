@@ -82,8 +82,9 @@ std::istream &operator>>(std::istream &stream, Autoturism &a)
     std::cout << "Culoare = ";
     stream >> buffer;
 
-    if (a.culoare == nullptr)
+    if (buffer != nullptr)
     {
+        a.culoare = nullptr;
         a.culoare = new char[strlen(buffer) + 1];
     }
     strcpy(a.culoare, buffer);
