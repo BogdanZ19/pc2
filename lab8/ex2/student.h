@@ -19,6 +19,7 @@ public:
     std::string getNume();
     friend std::ostream& operator<<(std::ostream&, StudentAC);
     friend std::ostream& operator<<(std::ostream&, std::vector<StudentAC>);
+    bool operator<(const StudentAC);
 };
 
 void citireArr(StudentAC*&, int&);

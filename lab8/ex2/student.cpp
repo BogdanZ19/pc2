@@ -14,12 +14,12 @@ void StudentAC::citireStudent()
 
 void StudentAC::afisare()
 {
-    std::cout << "(nume, nota) = (" << nume << ", " << nota << ")" << std::endl;
+    std::cout << "(" << nume << ", " << nota << ")" << std::endl;
 }
 
 void StudentAC::afisareFaraEndl()
 {
-    std::cout << "(nume, nota) = (" << nume << ", " << nota << ")";
+    std::cout << "(" << nume << ", " << nota << ")";
 }
 
 void StudentAC::setNota(int nouaNota)
@@ -42,9 +42,19 @@ std::string StudentAC::getNume()
     return nume;
 }
 
+bool StudentAC::operator<(const StudentAC s)
+{
+    if (nota < s.nota)
+    {
+        return true;
+    }
+
+    return false;
+}
+
 std::ostream &operator<<(std::ostream &stream, StudentAC s)
 {
-    stream << "(nume, nota) = (" << s.nume << ", " << s.nota << ")";
+    stream << "(" << s.nume << ", " << s.nota << ")";
 
     return stream;
 }

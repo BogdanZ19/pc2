@@ -1,6 +1,7 @@
 #include <iostream>
 #include "student.h"
 #include <vector>
+#include <algorithm>
 
 int main()
 {
@@ -22,6 +23,9 @@ int main()
 
     s3 = exchange(s2, n);
     std::cout << "vectorul s3 este: " << s3;
+
+    std::sort(s3.begin(), s3.end());
+    std::cout << "vectorul s3 sortat este: " << s3;
 
     delete[] s2;
 
