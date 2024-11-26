@@ -21,10 +21,5 @@ void Student::afisareProfil()
 
 bool Student::operator<(const Student s)
 {
-    if(m_iNotaP2 < s.m_iNotaP2)
-    {
-        return true;
-    }
-    
-    return false;
+    return m_iNotaP2 < s.m_iNotaP2;
 }

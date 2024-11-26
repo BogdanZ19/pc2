@@ -9,6 +9,7 @@ int main()
     Persoana p2("Andrei", "str. Calea Victoriei");
     Student s1("Mihai", "str. Cuza Voda", 2, 5);
     Student s2("Petru", "str. Stefan cel mare", 2, 3);
+    
     p1.afisareProfil();
     p2.afisareProfil();
     s1.afisareProfil();
@@ -26,5 +27,6 @@ int main()
     std::cout << "Prof1 dupa sortare dupa nota: " << std::endl;
     prof1.sortStudenti();
     prof1.afiseazaStudenti();
+    
     return 0;
 }
