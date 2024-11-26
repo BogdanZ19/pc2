@@ -45,3 +45,4 @@ std::istream &operator>>(std::istream &stream, Autoturism &a)
 
     return stream;
 }
+
