@@ -41,6 +41,5 @@ int main()
 
     std::cout << "nrInstante = " << ContBancar::getNrInstante() << std::endl;
 
-
     return 0;
 }
